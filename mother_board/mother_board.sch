@@ -1,0 +1,401 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5C83EB7E
+P 5975 3000
+F 0 "A1" H 5975 1625 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5975 1525 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6125 2050 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5975 2000 50  0001 C CNN
+	1    5975 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x16_Female J6
+U 1 1 5C83EC66
+P 9300 1850
+F 0 "J6" H 9194 825 50  0000 C CNN
+F 1 "Conn_01x16_Female" H 9194 916 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 9300 1850 50  0001 C CNN
+F 3 "~" H 9300 1850 50  0001 C CNN
+	1    9300 1850
+	-1   0    0    1   
+$EndComp
+Text Notes 9350 700  0    50   ~ 0
+LCD I2C MODULE\n
+Text Notes 9425 3175 0    50   ~ 0
+RTC CLOCK\n
+$Comp
+L Connector:Conn_01x03_Female J8
+U 1 1 5C83EF43
+P 9800 5125
+F 0 "J8" H 9650 5475 50  0000 L CNN
+F 1 "TEMPERATURE" H 9350 5375 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9800 5125 50  0001 C CNN
+F 3 "~" H 9800 5125 50  0001 C CNN
+	1    9800 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J7
+U 1 1 5C83EFC3
+P 9725 3725
+F 0 "J7" H 9600 4175 50  0000 L CNN
+F 1 "RTC CLOCK" H 9275 4050 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 9725 3725 50  0001 C CNN
+F 3 "~" H 9725 3725 50  0001 C CNN
+	1    9725 3725
+	1    0    0    -1  
+$EndComp
+Text Notes 9150 4750 0    50   ~ 0
+Temperature sensor connector\n\n
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5C8447F1
+P 2725 1425
+F 0 "J1" H 2600 1050 50  0000 L CNN
+F 1 "Power Supply" H 2200 1200 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2725 1425 50  0001 C CNN
+F 3 "~" H 2725 1425 50  0001 C CNN
+	1    2725 1425
+	-1   0    0    1   
+$EndComp
+Text Notes 2500 975  0    50   ~ 0
+POWER SUPPLY\n
+Wire Wire Line
+	2925 1425 3050 1425
+Wire Wire Line
+	3050 1425 3050 1525
+$Comp
+L power:GND #PWR0101
+U 1 1 5C844BB3
+P 3050 1525
+F 0 "#PWR0101" H 3050 1275 50  0001 C CNN
+F 1 "GND" H 3055 1352 50  0000 C CNN
+F 2 "" H 3050 1525 50  0001 C CNN
+F 3 "" H 3050 1525 50  0001 C CNN
+	1    3050 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 1325 5875 2000
+$Comp
+L Connector:Conn_01x16_Male J9
+U 1 1 5C844DBB
+P 10200 1850
+F 0 "J9" H 10200 800 50  0000 R CNN
+F 1 "Conn_01x16_Male" H 10400 925 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10200 1850 50  0001 C CNN
+F 3 "~" H 10200 1850 50  0001 C CNN
+	1    10200 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 1050 9500 1050
+Wire Wire Line
+	9500 1150 10000 1150
+Wire Wire Line
+	10000 1250 9500 1250
+Wire Wire Line
+	9500 1350 10000 1350
+Wire Wire Line
+	10000 1450 9500 1450
+Wire Wire Line
+	9500 1550 10000 1550
+Wire Wire Line
+	10000 1650 9500 1650
+Wire Wire Line
+	9500 1750 10000 1750
+Wire Wire Line
+	10000 1850 9500 1850
+Wire Wire Line
+	9500 1950 10000 1950
+Wire Wire Line
+	10000 2050 9500 2050
+Wire Wire Line
+	9500 2150 10000 2150
+Wire Wire Line
+	10000 2250 9500 2250
+Wire Wire Line
+	10000 2350 9500 2350
+Wire Wire Line
+	9500 2450 10000 2450
+Wire Wire Line
+	10000 2550 9500 2550
+$Comp
+L power:GND #PWR0102
+U 1 1 5C8461A5
+P 9450 4200
+F 0 "#PWR0102" H 9450 3950 50  0001 C CNN
+F 1 "GND" H 9455 4027 50  0000 C CNN
+F 2 "" H 9450 4200 50  0001 C CNN
+F 3 "" H 9450 4200 50  0001 C CNN
+	1    9450 4200
+	1    0    0    -1  
+$EndComp
+Text Label 9250 3925 2    50   ~ 0
+MCU_5V
+Wire Wire Line
+	9525 3925 9250 3925
+Wire Wire Line
+	9525 4025 9450 4025
+Wire Wire Line
+	9450 4025 9450 4200
+$Comp
+L power:GND #PWR0103
+U 1 1 5C846EF5
+P 9475 5475
+F 0 "#PWR0103" H 9475 5225 50  0001 C CNN
+F 1 "GND" H 9480 5302 50  0000 C CNN
+F 2 "" H 9475 5475 50  0001 C CNN
+F 3 "" H 9475 5475 50  0001 C CNN
+	1    9475 5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5225 9475 5225
+Wire Wire Line
+	9475 5225 9475 5475
+Text Label 9325 5025 2    50   ~ 0
+MCU_5V
+Wire Wire Line
+	9600 5025 9325 5025
+$Comp
+L power:GND #PWR0104
+U 1 1 5C847F2D
+P 6075 4075
+F 0 "#PWR0104" H 6075 3825 50  0001 C CNN
+F 1 "GND" H 6080 3902 50  0000 C CNN
+F 2 "" H 6075 4075 50  0001 C CNN
+F 3 "" H 6075 4075 50  0001 C CNN
+	1    6075 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 4000 5975 4050
+Wire Wire Line
+	5975 4050 6075 4050
+Wire Wire Line
+	6075 4050 6075 4075
+Wire Wire Line
+	6075 4050 6075 4000
+Connection ~ 6075 4050
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 5C84895A
+P 8475 1975
+F 0 "J5" H 8600 1625 50  0000 R CNN
+F 1 "LCD" H 8800 1475 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8475 1975 50  0001 C CNN
+F 3 "~" H 8475 1975 50  0001 C CNN
+	1    8475 1975
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C84977D
+P 8150 2250
+F 0 "#PWR0105" H 8150 2000 50  0001 C CNN
+F 1 "GND" H 8155 2077 50  0000 C CNN
+F 2 "" H 8150 2250 50  0001 C CNN
+F 3 "" H 8150 2250 50  0001 C CNN
+	1    8150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 2075 8150 2075
+Wire Wire Line
+	8150 2075 8150 2250
+Text Label 8100 1975 2    50   ~ 0
+MCU_5V
+Wire Wire Line
+	8275 1975 8100 1975
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 5C84A6ED
+P 3750 2925
+F 0 "J3" H 3825 3400 50  0000 C CNN
+F 1 "RELE" H 3850 3275 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3750 2925 50  0001 C CNN
+F 3 "~" H 3750 2925 50  0001 C CNN
+	1    3750 2925
+	1    0    0    -1  
+$EndComp
+Text Notes 3550 2375 0    50   ~ 0
+RELE CONNECTOR
+$Comp
+L power:GND #PWR0106
+U 1 1 5C84B209
+P 4050 3400
+F 0 "#PWR0106" H 4050 3150 50  0001 C CNN
+F 1 "GND" H 4055 3227 50  0000 C CNN
+F 2 "" H 4050 3400 50  0001 C CNN
+F 3 "" H 4050 3400 50  0001 C CNN
+	1    4050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3225 4050 3225
+Wire Wire Line
+	4050 3225 4050 3400
+Text Label 4125 2725 0    50   ~ 0
+MCU_5V
+Wire Wire Line
+	4125 2725 3950 2725
+Wire Wire Line
+	9525 3825 6475 3825
+Wire Wire Line
+	6475 3825 6475 3700
+Wire Wire Line
+	9525 3725 6575 3725
+Wire Wire Line
+	6575 3725 6575 3600
+Wire Wire Line
+	6575 3600 6475 3600
+Text Notes 9750 3850 0    50   ~ 0
+SDA
+Text Notes 9750 3750 0    50   ~ 0
+SCL
+Text Notes 8525 1900 0    50   ~ 0
+SDA
+Text Notes 8525 1800 0    50   ~ 0
+SCL
+Wire Wire Line
+	8275 1875 7750 1875
+Wire Wire Line
+	7750 1875 7750 3500
+Wire Wire Line
+	6475 3500 7750 3500
+Wire Wire Line
+	7625 3400 7625 1775
+Wire Wire Line
+	7625 1775 8275 1775
+Wire Wire Line
+	6475 3400 7625 3400
+Wire Wire Line
+	3950 3125 5100 3125
+Wire Wire Line
+	5100 3125 5100 3000
+Wire Wire Line
+	5100 3000 5475 3000
+Wire Wire Line
+	3950 3025 4975 3025
+Wire Wire Line
+	4975 2900 5475 2900
+Wire Wire Line
+	4975 2900 4975 3025
+Wire Wire Line
+	4875 2800 4875 2925
+Wire Wire Line
+	4875 2925 3950 2925
+Wire Wire Line
+	3950 2825 4750 2825
+Wire Wire Line
+	4750 2825 4750 2700
+Wire Wire Line
+	4750 2700 5475 2700
+Wire Wire Line
+	4600 5125 4600 2600
+Wire Wire Line
+	4600 2600 5475 2600
+Wire Wire Line
+	4600 5125 9600 5125
+Wire Wire Line
+	4875 2800 5475 2800
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5C85F24D
+P 5275 850
+F 0 "J4" V 5335 891 50  0000 L CNN
+F 1 "Serial " V 5426 891 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5275 850 50  0001 C CNN
+F 3 "~" H 5275 850 50  0001 C CNN
+	1    5275 850 
+	0    1    1    0   
+$EndComp
+Text Notes 4900 675  0    50   ~ 0
+SERIAL CONNECTOR
+Wire Wire Line
+	5275 1050 5275 2400
+Wire Wire Line
+	5275 2400 5475 2400
+Wire Wire Line
+	5175 1050 5175 2500
+Wire Wire Line
+	5175 2500 5475 2500
+Text Notes 5275 825  0    50   ~ 0
+RX
+Text Notes 5125 825  0    50   ~ 0
+TX
+$Comp
+L power:GND #PWR0107
+U 1 1 5C8645D0
+P 3875 4450
+F 0 "#PWR0107" H 3875 4200 50  0001 C CNN
+F 1 "GND" H 3880 4277 50  0000 C CNN
+F 2 "" H 3875 4450 50  0001 C CNN
+F 3 "" H 3875 4450 50  0001 C CNN
+	1    3875 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4300 3875 4300
+Wire Wire Line
+	3875 4300 3875 4450
+Text Notes 3575 3825 0    50   ~ 0
+BUZZER
+Wire Wire Line
+	5225 3100 5475 3100
+NoConn ~ 9525 3525
+NoConn ~ 9525 3625
+NoConn ~ 6475 2400
+NoConn ~ 6475 2500
+NoConn ~ 6075 2000
+NoConn ~ 5475 3200
+NoConn ~ 5475 3300
+NoConn ~ 5475 3400
+NoConn ~ 5475 3500
+NoConn ~ 5475 3600
+NoConn ~ 5475 3700
+NoConn ~ 6475 3300
+NoConn ~ 6475 3200
+NoConn ~ 6475 3100
+NoConn ~ 6475 3000
+NoConn ~ 6475 2800
+Text Label 6175 1825 1    50   ~ 0
+MCU_5V
+Wire Wire Line
+	6175 2000 6175 1825
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 5C887C85
+P 3600 4200
+F 0 "J2" H 3494 3875 50  0000 C CNN
+F 1 "BUZZER" H 3494 3966 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3600 4200 50  0001 C CNN
+F 3 "~" H 3600 4200 50  0001 C CNN
+	1    3600 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 4100 5225 4100
+Wire Wire Line
+	5225 4100 5225 3100
+NoConn ~ 3800 4200
+Wire Wire Line
+	2925 1325 5875 1325
+$EndSCHEMATC
